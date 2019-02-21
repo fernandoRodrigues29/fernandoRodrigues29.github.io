@@ -1,0 +1,54 @@
+		.bannerSkill { 
+		 	height:194px;
+		 	border-radius: 50%;
+		 }
+		 .bannerSkill .skillTitle{
+		 	border:0px solid green;
+			text-align: center;
+			margin-top: 45px;
+			font-style: inherit;
+		 }
+		 .skillList p{
+			border:0px solid blue;
+			text-align: center;
+			margin-top: 2%;
+		 }
+		 #bannerHtml {
+			border:10px solid #06266F;
+		 }
+		 #bannerJS {
+			border:10px solid #F1F172;
+		 }
+		 #bannerPHP {
+			border:10px solid #6B58A6;
+		 }
+		 #bannerSQL {
+			border:10px solid #D45E1F;
+		 }
+		/*profifolio*/
+		.portfolioContainerNovo{
+			display: flex;
+			 flex-flow: row;
+		}
+		.imagensPortifolio {
+			
+			border: 1px solid #D6DBDD;
+			margin:auto;
+		}
+
+
+		 
+		 @media screen and (max-width: 425px) {
+			.bannerSkill{
+				width: 50%;
+				margin:0 auto;
+			}
+		}
+		 @media screen and (max-width: 425px) {
+			.portfolioContainerNovo{
+				display: flex;
+				flex-flow: column wrap;
+
+			}
+		}		
+}	
