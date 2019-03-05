@@ -1,30 +1,93 @@
-		.bannerSkill { 
-		 	height:194px;
-		 	border-radius: 50%;
-		 }
-		 .bannerSkill .skillTitle{
-		 	border:0px solid green;
-			text-align: center;
-			margin-top: 45px;
-			font-style: inherit;
-		 }
-		 .skillList p{
-			border:0px solid blue;
-			text-align: center;
-			margin-top: 2%;
-		 }
-		 #bannerHtml {
-			border:10px solid #06266F;
-		 }
-		 #bannerJS {
-			border:10px solid #F1F172;
-		 }
-		 #bannerPHP {
-			border:10px solid #6B58A6;
-		 }
-		 #bannerSQL {
-			border:10px solid #D45E1F;
-		 }
+/*habilidades*/
+.conteudo{
+	display:flex;
+	/**/flex-wrap: wrap;/**/
+	justify-content: center;
+}
+.flip{
+	width: 260px;
+	height: 270px;
+	float: left;
+	perspective: 1000px;
+	margin-left: 7px;
+
+	-webkit-box-shadow: 10px 12px 11px -12px rgba(8,8,8,1);
+	-moz-box-shadow: 10px 12px 11px -12px rgba(8,8,8,1);
+	box-shadow: 10px 12px 11px -12px rgba(8,8,8,1);
+}
+.flip > div{
+	width: 260px;
+	height: 270px;
+}		
+
+.flip .frente {
+	position: absolute;
+	transform: rotateY(0deg);
+	/*o que e isso?*/
+	backface-visibility: hidden;
+	transition: all .4s linear;
+}
+.flip .fundo {
+	position: absolute;
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+	transition: all .4s linear;
+}
+/*imagens*/
+.frente img{
+	border:0px solid red;
+	width: 150px;
+	height: 200px;
+	position: absolute;  
+	top: 7;  
+	bottom: 0;  
+	left: 0;  
+	right: 0;  
+	margin: auto;	
+}
+/*efeito de hover do mouse*/
+.flip:hover .frente{
+	transform: rotateY(-180deg);
+	cursor:pointer;
+}
+.flip:hover .fundo{
+	transform: rotateY(0deg);
+	cursor:pointer;
+}
+/*-personalizar css dos cartoes-*/
+.banner-html {
+	border: 1px solid #ccc;
+	background-color: #fff;
+	background-image: linear-gradient(#fff, #30aadd);
+}
+.banner-php{
+	border: 1px solid #ccc;
+	background-color: #fff;
+	background-image: linear-gradient(#fff, #ef3c0a);
+}
+.banner-banco{
+	border: 1px solid #ccc;
+	background-color: #fff;
+	background-image: linear-gradient(#fff, #fbcb54);
+}		
+/*texto centralizado*/
+.textoCentralizado {
+	text-align: center;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size:25px;
+	margin-top:5px; 
+}
+/*organizar lista de competencias*/
+.listaDeCompetencias{
+	list-style-type: none;
+	text-align: center;
+	font-family:'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
+	font-size: 15px;
+}
+.listaDeCompetencias li{
+	margin-bottom: 1px;
+	display:block !important;
+}
 		/*profifolio*/
 		.portfolioContainerNovo{
 			display: flex;
