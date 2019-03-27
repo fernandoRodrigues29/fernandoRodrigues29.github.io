@@ -15,7 +15,10 @@
 	<link href="02-cv-boxed/css/styles.css" rel="stylesheet">
 	<link href="02-cv-boxed/css/responsive.css" rel="stylesheet">
 	<!--pessoal galeria-->
+	<!--
 	<link href="common-css/galeriaPortifolio.css" rel="stylesheet">	
+	-->
+		<link href="common-css/galeria.css" rel="stylesheet">	
 
 
 </head>
@@ -92,7 +95,29 @@
 			</div><!-- intro -->
 		</div><!-- container -->
 	</section><!-- intro-section -->
-	
+	<section class="portfolio-section section">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-3">
+					<div class="heading">
+						<h3><b>Portfolio</b></h3>
+						<h6 class="font-lite-black"><b>Meus Trabalhos</b></h6>
+					</div>
+				</div><!-- col-sm-3 -->
+			</div>
+			<div class="container">
+			    <div id="container_img"></div>
+			    <div class="imgThumblr">
+			      <img src="images/spcalpha_01.png" imgend="images/spcalpha_01.png" id="img1" class="imagem" 
+			      onclick="clikChanheImg('img1')">
+			      <img src="images/xport0.jpg"  imgend="images/xport0.jpg"  id="img2" class="imagem" 
+			      onclick="clikChanheImg('img2')">
+			      <img src="images/sitePrestador00-min.jpg"  imgend="images/sitePrestador00-min.jpg"  id="img3" class="imagem" 
+			      onclick="clikChanheImg('img3')">
+			    </div>
+			</div>
+		</div><!-- container -->
+	</section><!-- portfolio-section -->
 	
 	<section class="about-section section">
 		<div class="container">
@@ -105,7 +130,7 @@
 					</div>
 				</div>
 				<!-- col-sm-3 -->
-				<div class="col-sm-12 col-md-9">
+				<div class="col-sm-12 col-md-12">
 					<!--
 					<p class="margin-b-50">Um resumo das minhas pricipais habilidades</p>
 					-->
@@ -119,87 +144,62 @@
 							<div class="flip">
 									<div class="fundo banner-html">
 										<ul class="listaDeCompetencias">
-											<li>Javascript - 7 anos </li>
+											<li>CSS Mobile First</li>
 											<li> Botstrap</li>
-											<li> Angular js</li>
-											<li> VueJs</li>
-											<li> Typescript</li>
+											<li> HTML 5</li>
 										</ul>	 
 									</div>
 									<div class="frente banner-html" >
-											<img src="images/fe.png">
+											<img src="images/fortPNG.png">
 											<p class="textoCentralizado">Front End</p>							
 									</div>
 								</div>
 							<div class="flip">
-										<div class="fundo banner-php">
-												<ul class="listaDeCompetencias">
-													<li> PHP  - 7 anos</li>
-													<li> Codeigniter</li>
-													<li> Zend 3</li>
-													<li> Silex(iniciante)</li>
-													<li> Wordpress</li>
-												</ul>	 
-											</div>
-											<div class="frente banner-php" >
-													<img src="images/BE.png">
-													<p class="textoCentralizado">Back End</p>							
-											</div>
+								<div class="fundo banner-php">
+									<ul class="listaDeCompetencias">
+										<li> PHP  - 7 anos</li>
+										<li> Zend 3</li>
+										<li> Slim</li>
+										<li> Codeigniter</li>
+										<li> Wordpress</li>
+									</ul>	 
 									</div>
+										<div class="frente banner-php" >
+											<img src="images/iconesPNG.png">
+											<p class="textoCentralizado">Back End</p>							
+										</div>
+							</div>
 							<div class="flip">
-											<div class="fundo banner-banco">
-													<ul class="listaDeCompetencias">
-														<li>Mysql - 7 anos </li>
-														<li> MongoDB(iniciante)</li>
-													</ul>	 
-												</div>
-												<div class="frente banner-banco" >
-														<img src="images/BD.png">
-														<p class="textoCentralizado">Banco De Dados</p>							
-												</div>
-									</div>	
+								<div class="fundo banner-javascript">
+									<ul class="listaDeCompetencias">
+										<li> Angular js</li>
+										<li> VueJs</li>
+										<li> Typescript</li>
+									</ul>	 
+								</div>
+								<div class="frente banner-javascript" >
+									<img src="images/javascriptIcone.png">
+									<p class="textoCentralizado">Javascript</p>							
+								</div>
+							</div>
+							<div class="flip">
+								<div class="fundo banner-mobile">
+									<ul class="listaDeCompetencias">
+										<li>Cordova </li>
+										<li> Ionic 1</li>
+									</ul>	 
+								</div>
+								<div class="frente banner-mobile" >
+									<img src="images/iconeMobile.png">
+									<p class="textoCentralizado">Aplicativos</p>							
+								</div>
+							</div>								
 					</div>
 					</div><!-- row -->
 				</div><!-- col-sm-9 -->
 			</div><!-- row -->
 		</div><!-- container -->
 	</section><!-- about-section -->
-
-	<section class="portfolio-section section">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 col-md-3">
-					<div class="heading">
-						<h3><b>Portfolio Teste</b></h3>
-						<h6 class="font-lite-black"><b>Meus Trabalhos</b></h6>
-					</div>
-				</div><!-- col-sm-3 -->
-				
-				<div class="col-sm-12 col-md-9">
-					<!--
-					<div class="portfolioFilter clearfix margin-b-80">
-						<a href="#" data-filter="*" class="current"><b>ALL</b></a>
-						<a href="#" data-filter=".web-design"><b>WEB DESIGN</b></a>
-						<a href="#" data-filter=".branding"><b>BRANDING</b></a>
-						<a href="#" data-filter=".graphic-design"><b>GRAPHIC DESIGN</b></a>
-					</div> portfolioFilter -->
-				</div><!-- col-sm-8 -->
-			</div><!-- row -->
-			
-				<div class="gallery" style="margin-bottom: 35px">
-					<div class="img-w"><img src="images/sistema_escolar00.jpg" alt="" /></div>
-					<!--<div class="img-w"><img src="images/sistema_escolar02.jpg" alt="" /></div>-->
-					<div class="img-w"><img src="images/spcalpha_01.png" alt="" /></div>
-					<div class="img-w"><img src="images/exercicio_vuejs01.jpg" alt="" /></div>
-				</div> 
-				<hr>
-				<div class="gallery" style="margin-top: 35px">
-					<div class="img-w"><img src="images/xport0.jpg" alt="" /></div>
-					<div class="img-w"><img src="images/01.png" alt="" /></div>
-					<div class="img-w"><img src="images/sistema_SiteComercial2.jpg" alt="" /></div>
-				</div> 				
-		</div><!-- container -->
-	</section><!-- portfolio-section -->
 	<section class="experience-section section">
 		<div class="container">
 			<div class="row">
@@ -369,6 +369,16 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="common-js/scripts.js"></script>
 	<!--Galeria Pessoal-->
 	<script src="common-js/galeriaPortifolio.js"></script>
-		
+	   <script type="text/javascript">
+      function clikChanheImg(id) {
+        var urlImg = document.getElementById(id);
+        console.log(urlImg.getAttribute('src'));
+        
+        document.getElementById("container_img").style.backgroundImage = "url('"+urlImg.getAttribute('imgend')+"')";
+        document.getElementById("container_img").style.backgroundRepeat = "no-repeat";
+        document.getElementById("container_img").style.backgroundSize = "100% 100%";
+      }
+
+    </script>		
 </body>
 </html>

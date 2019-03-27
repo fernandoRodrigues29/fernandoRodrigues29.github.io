@@ -11,9 +11,9 @@
 	perspective: 1000px;
 	margin-left: 7px;
 
-	-webkit-box-shadow: 10px 12px 11px -12px rgba(8,8,8,1);
-	-moz-box-shadow: 10px 12px 11px -12px rgba(8,8,8,1);
-	box-shadow: 10px 12px 11px -12px rgba(8,8,8,1);
+	-webkit-box-shadow: 0px 0px 15px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 15px -6px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 15px -6px rgba(0,0,0,0.75);
 }
 .flip > div{
 	width: 260px;
@@ -56,19 +56,24 @@
 }
 /*-personalizar css dos cartoes-*/
 .banner-html {
-	border: 1px solid #ccc;
+	border: 1px solid #4690e6;
 	background-color: #fff;
-	background-image: linear-gradient(#fff, #30aadd);
+	background-image: linear-gradient(rgb(76, 196, 252), #4690e6);
 }
 .banner-php{
-	border: 1px solid #ccc;
+	border: 1px solid #1def0ac4;
 	background-color: #fff;
-	background-image: linear-gradient(#fff, #ef3c0a);
+	background-image: linear-gradient(#4ae235, #1def0ac4);
 }
-.banner-banco{
-	border: 1px solid #ccc;
+.banner-javascript{
+	border: 1px solid #ddda07;
 	background-color: #fff;
-	background-image: linear-gradient(#fff, #fbcb54);
+	background-image: linear-gradient(#f4f746, #b4b10c);
+}
+.banner-mobile{
+	border: 1px solid #0687b9;
+	background-color: #fff;
+	background-image: linear-gradient(#3ac9d3, #0687b9);
 }		
 /*texto centralizado*/
 .textoCentralizado {
@@ -88,30 +93,25 @@
 	margin-bottom: 1px;
 	display:block !important;
 }
-		/*profifolio*/
-		.portfolioContainerNovo{
-			display: flex;
-			 flex-flow: row;
-		}
-		.imagensPortifolio {
-			
-			border: 1px solid #D6DBDD;
-			margin:auto;
-		}
-
-
-		 
-		 @media screen and (max-width: 425px) {
-			.bannerSkill{
-				width: 50%;
-				margin:0 auto;
-			}
-		}
-		 @media screen and (max-width: 425px) {
-			.portfolioContainerNovo{
-				display: flex;
-				flex-flow: column wrap;
-
-			}
-		}		
-}	
+/*profifolio*/
+.portfolioContainerNovo{
+	display: flex;
+	 flex-flow: row;
+}
+.imagensPortifolio {
+	border: 1px solid #D6DBDD;
+	margin:auto;
+}
+@media screen and (max-width: 425px) {
+	.bannerSkill{
+		width: 50%;
+		margin:0 auto;
+	}
+}
+@media screen and (max-width: 425px) {
+	.portfolioContainerNovo{
+		display: flex;
+		flex-flow: column wrap;
+	}
+}		
+ 
