@@ -1,0 +1,132 @@
+.section-p{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.conteiner{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.conteiner .slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 100%;
+    animation: animate 10s linear infinite;
+}
+
+.conteiner .slider .slide{
+    position: relative;
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+.conteiner .slider .slide .caption{
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    right: 60px;
+    padding: 30px;
+    background: rgba(0,0,0,0.5);
+    box-sizing: border-box;
+}
+
+.conteiner .slider .slide .caption h2{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 48px;
+}
+
+.conteiner .slider .slide .caption p{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 18px;
+}
+
+.conteiner .slider .slide.slide1{
+    background: url(../images/slides/00.png);
+    background-size: cover;
+    background-position: center;
+}
+.conteiner .slider .slide.slide2{
+    background: url(../images/slides/01.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.conteiner .slider .slide.slide3{
+    background: url(../images/slides/02.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.conteiner .slider .slide.slide4{
+    background: url(../images/slides/03.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes animate
+{
+    
+    0%
+    {
+        left: 0;
+    }
+    20%
+    {
+        left: 0;
+    }
+    25%
+    {
+        left: -100%;
+    }
+    45%
+    {
+        left: -100%;
+    }
+    50%
+    {
+        left: -200%;
+    }
+    70%
+    {
+        left: -200%;
+    }
+    75%
+    {
+        left: -300%;
+    }
+    95%
+    {
+        left: -300%;
+    }
+    100%
+    {
+        left: -300%;
+    }
+}
+@media (max-width: 768px) {
+    .conteiner .slider .slide .caption{
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        padding: 20px;
+    }
+    
+    .conteiner .slider .slide .caption h2{
+        margin: 0 0 10px;
+        font-size: 30px;
+    }
+    
+    .conteiner .slider .slide .caption p{
+        font-size: 16px;
+    }
+}

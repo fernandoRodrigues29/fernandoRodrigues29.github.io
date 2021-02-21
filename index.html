@@ -15,11 +15,12 @@
 	<link href="02-cv-boxed/css/styles.css" rel="stylesheet">
 	<link href="02-cv-boxed/css/responsive.css" rel="stylesheet">
 	<!--pessoal galeria-->
-	<!--
-	<link href="common-css/galeriaPortifolio.css" rel="stylesheet">	
-	-->
-		<link href="common-css/galeria.css" rel="stylesheet">	
+	<link href="common-css/galeria.css" rel="stylesheet">	
+	<link href="common-css/protifolio.css" rel="stylesheet">	
+	<link href="common-css/cards.css" rel="stylesheet">	
+	<style>
 
+	</style>
 
 </head>
 <body>
@@ -40,7 +41,6 @@
 						<div class="info">
 							<i class="icon ion-ios-telephone-outline"></i>
 							<div class="right-area">
-								<h5>+55 61 99820-8995</h5>
 								<h6>+55 61 98130-1374</h6>
 							</div><!-- right-area -->
 						</div><!-- info -->
@@ -51,22 +51,19 @@
 							<i class="icon ion-ios-chatboxes-outline"></i>
 							<div class="right-area">
 								<h5>fernando1587@gmail.com</h5>
-								<h6>RETORNO EM 12H</h6>
+								<h6>RETORNO O MAIS BREVE</h6>
 							</div><!-- right-area -->
 						</div><!-- info -->
 					</div><!-- col-sm-4 -->
 				</div><!-- row -->
-			</div><!-- heading-wrapper -->
-			
-		
-		
+			</div>
+			<!-- heading-wrapper -->
 			<div class="intro">
 				<div class="row">
-				
 					<div class="col-sm-8 col-md-4 col-lg-3">
-						<div class="profile-img margin-b-30"><img src="images/profile01.jpg" alt=""></div>
-					</div><!-- col-sm-8 -->
-					
+						<div class="profile-img margin-b-30"><img src="images/principal_foto.jpg" alt=""></div>
+					</div>
+					<!-- col-sm-8 -->
 					<div class="col-sm-10 col-md-5 col-lg-6">		
 							<h2><b>Fernando R Silva</b></h2>
 							<h4 class="font-yellow">Especialista em Sistemas para internet</h4>
@@ -84,122 +81,92 @@
 								<li><a href="https://github.com/fernandoRodrigues29"><i class="ion-social-github"></i></a></li>
 							</ul>
 
-					</div><!-- col-sm-8 -->
-					<!--
-					<div class="col-sm-10 col-md-3 col-lg-3">
-						<a class="downlad-btn" href="#">Download CV</a>
-					</div><!-- col-lg-2 -->
-			
-				</div><!-- row -->
-			
+					</div>
+					<!-- col-sm-8 -->
+				</div>
+				<!-- row -->
 			</div><!-- intro -->
 		</div><!-- container -->
 	</section><!-- intro-section -->
-	<section class="portfolio-section section">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 col-md-3">
-					<div class="heading">
-						<h3><b>Portfolio</b></h3>
-						<h6 class="font-lite-black"><b>Meus Trabalhos</b></h6>
-					</div>
-				</div><!-- col-sm-3 -->
-			</div>
-			<div class="container">
-			    <div id="container_img"></div>
-			    <div class="imgThumblr">
-			      <img src="images/spcalpha_01.png" imgend="images/spcalpha_01.png" id="img1" class="imagem" 
-			      onclick="clikChanheImg('img1')">
-			      <img src="images/xport0.jpg"  imgend="images/xport0.jpg"  id="img2" class="imagem" 
-			      onclick="clikChanheImg('img2')">
-			      <img src="images/sitePrestador00-min.jpg"  imgend="images/sitePrestador00-min.jpg"  id="img3" class="imagem" 
-			      onclick="clikChanheImg('img3')">
-			    </div>
-			</div>
-		</div><!-- container -->
+	<section class="portfolio-section section-p">
+		<div class="conteiner">
+            <div class="slider">
+                <div class="slide slide1">
+                    <div class="caption">
+                        <h2>Slide 1</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet augue urna.
+                        </p>
+                    </div>
+                </div>
+                <div class="slide slide2">
+                    <div class="caption">
+                        <h2>Slide 2</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet augue urna.
+                        </p>
+                    </div>
+                </div>
+                <div class="slide slide3">
+                    <div class="caption">
+                        <h2>Slide 3</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet augue urna.
+                        </p>
+                    </div>
+                </div>
+                <div class="slide slide4">
+                    <div class="caption">
+                        <h2>Slide 4</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet augue urna.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-- container -->
 	</section><!-- portfolio-section -->
 	
-	<section class="about-section section">
-		<div class="container">
-			<div class="row">
-				<!--
-				<div class="col-sm-12 col-md-3">
-					<div class="heading">
-						<h3><b>Minha</b></h3>
-						<h6 class="font-lite-black"><b>ROTA PROFISSIONAL</b></h6>
-					</div>
+	<section class="habilidades-section section">
+		<div class="container-card">
+			<div class="card">
+				<div class="imgBx">
+					<img src="./images/crads/dev3.jpg" alt="">
 				</div>
-				<!-- col-sm-3 -->
-				<div class="col-sm-12 col-md-12">
-					<!--
-					<p class="margin-b-50">Um resumo das minhas pricipais habilidades</p>
-					-->
-					<div class="heading">
-							<h3><b>Habilidades</b></h3>
-							<h6 class="font-lite-black"><b>nas areas de</b></h6>
-					</div>
-					<!--bannerHtml-->
-					<div class="row">
-						<div class="conteudo">
-							<div class="flip">
-									<div class="fundo banner-html">
-										<ul class="listaDeCompetencias">
-											<li>CSS Mobile First</li>
-											<li> Botstrap</li>
-											<li> HTML 5</li>
-										</ul>	 
-									</div>
-									<div class="frente banner-html" >
-											<img src="images/fortPNG.png">
-											<p class="textoCentralizado">Front End</p>							
-									</div>
-								</div>
-							<div class="flip">
-								<div class="fundo banner-php">
-									<ul class="listaDeCompetencias">
-										<li> PHP  - 7 anos</li>
-										<li> Zend 3</li>
-										<li> Slim</li>
-										<li> Codeigniter</li>
-										<li> Wordpress</li>
-									</ul>	 
-									</div>
-										<div class="frente banner-php" >
-											<img src="images/iconesPNG.png">
-											<p class="textoCentralizado">Back End</p>							
-										</div>
-							</div>
-							<div class="flip">
-								<div class="fundo banner-javascript">
-									<ul class="listaDeCompetencias">
-										<li> Angular js</li>
-										<li> VueJs</li>
-										<li> Typescript</li>
-									</ul>	 
-								</div>
-								<div class="frente banner-javascript" >
-									<img src="images/javascriptIcone.png">
-									<p class="textoCentralizado">Javascript</p>							
-								</div>
-							</div>
-							<div class="flip">
-								<div class="fundo banner-mobile">
-									<ul class="listaDeCompetencias">
-										<li>Cordova </li>
-										<li> Ionic 1</li>
-									</ul>	 
-								</div>
-								<div class="frente banner-mobile" >
-									<img src="images/iconeMobile.png">
-									<p class="textoCentralizado">Aplicativos</p>							
-								</div>
-							</div>								
-					</div>
-					</div><!-- row -->
-				</div><!-- col-sm-9 -->
-			</div><!-- row -->
-		</div><!-- container -->
+				<div class="content">
+					<h2>PHP</h2>
+					<div class="i-info">10h</div>
+					<div class="i-info"><a href="http://" class="btn-info">REPO</a> </div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="imgBx">
+					<img src="./images/crads/dev3.jpg" alt="">
+				</div>
+				<div class="content">
+					<h2>JS</h2>
+					<div class="horario-info">10h</div>
+					<div class="link-repo-info"><a href="http://">REPO</a> </div>
+	
+				</div>
+			</div>
+			<div class="card">
+				<div class="imgBx">
+					<img src="./images/crads/dev3.jpg" alt="">
+				</div>
+				<div class="content">
+					<h2>DATABASE</h2>
+					<div class="horario-info">10h</div>
+					<div class="link-repo-info"><a href="http://">REPO</a> </div>
+	
+				</div>
+			</div>
+	
+		</div>
+		
 	</section><!-- about-section -->
+
 	<section class="experience-section section">
 		<div class="container">
 			<div class="row">
