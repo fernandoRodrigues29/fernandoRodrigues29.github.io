@@ -52,22 +52,22 @@
 }
 
 .conteiner .slider .slide.slide1{
-    background: url(../images/slides/00.png);
+    background: url(../images/slides/projetos00.jpg);
     background-size: cover;
     background-position: center;
 }
 .conteiner .slider .slide.slide2{
-    background: url(../images/slides/01.jpg);
+    background: url(../images/slides/projetos01.jpg);
     background-size: cover;
     background-position: center;
 }
 .conteiner .slider .slide.slide3{
-    background: url(../images/slides/02.jpg);
+    background: url(../images/slides/projetos02.jpg);
     background-size: cover;
     background-position: center;
 }
 .conteiner .slider .slide.slide4{
-    background: url(../images/slides/03.jpg);
+    background: url(../images/slides/projetos03.jpg);
     background-size: cover;
     background-position: center;
 }

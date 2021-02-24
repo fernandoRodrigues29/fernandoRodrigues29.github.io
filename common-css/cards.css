@@ -10,7 +10,10 @@
     align-items: center;
     background: #fcfcfc;
 
-    height: 100vh;
+    /* height: 100vh; */
+    height: auto;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
 }
 .container-card
 {
