@@ -7,6 +7,8 @@
 	<meta charset="UTF-8">
 	<!-- Font -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700%7CAllura" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<!-- Stylesheets -->
 	<link href="common-css/bootstrap.css" rel="stylesheet">
 	<link href="common-css/ionicons.css" rel="stylesheet">
@@ -22,6 +24,63 @@
 		.info h5,.info h6{
 			padding-top: 2vh;
 		}
+		.areas_atuacoes{
+			display: flex;
+		    min-height: 100vh;
+		    background-color: #f0f0f1;
+		    flex-direction: column;
+		    justify-content: space-evenly;
+		}
+		.areas_atuacoes .titulos 
+		{
+			margin: 0 auto;
+		}
+		.areas_atuacoes .titulos h1
+		{
+		    text-align: center;
+		    font-size: 35px;
+		    font-family: "Poppins",sans-serif;
+		    max-width: 41vw;
+		    padding-bottom: 10px;
+		    border-bottom: 4px solid orange;
+		}
+		
+		.container_area_atuacao {
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    flex-wrap: wrap;
+		    gap: 10px;
+		    padding-top: 4vw;
+    		padding-bottom: 4vw;
+		}
+		
+		.container_area_atuacao .card {
+		    max-width: 22em;
+		    text-align: center;
+		    padding: 27px 36px;
+		    flex-basis: 300px;
+		    min-height: 12em;
+		    margin: 0px 3em;
+		    box-shadow: 1px 7px 63px 12px #cccccc59;
+		    transition: .5s;
+		}
+
+		.container_area_atuacao .card:hover {
+		    box-shadow: 1px 7px 30px 12px #ccc;
+		    border: 1px solid #ccc;
+		}
+
+		.container_area_atuacao .card .imgBox {
+			padding: 2rem 0 2rem 0;
+		}
+
+		.container_area_atuacao .card .imgBox i{
+			font-size: 5rem;
+			color: orange;
+		}
+
+
 	</style>
 
 </head>
@@ -90,6 +149,34 @@
 			</div><!-- intro -->
 		</div><!-- container -->
 	</section><!-- intro-section -->
+	<section class="areas_atuacoes">
+		<div class="titulos">
+			<h1>Areas de Atuação</h1>
+		</div>
+		<div class="container_area_atuacao">
+			<div class="card">
+				<div class="imgBox">
+					<i class="fa-solid fa-laptop-code"></i>
+				</div>
+				<h4>Criação de Sites</h4>
+				<p>Construo sua casa online, onde seus clientes podem te encontar com mais facilidade</p>
+			</div>
+			<div class="card">
+				<div class="imgBox">
+					<i class="fa-sharp fa-solid fa-code"></i>
+				</div>
+				<h4>Sistemas personalizados</h4>
+				<p>crio soluções para te ajudar no seu trabalho, crm, gestão de pessoas entre outros</p>
+			</div>
+			<div class="card">
+				<div class="imgBox">
+					<i class="fa-sharp fa-solid fa-gears"></i>
+				</div>
+				<h4>Manutenção e Reforma</h4>
+				<p>Faço 'refactoring' de sistemas legados e crio novas funcionalidades para seu sistema</p>
+			</div>
+		</div>
+	</section>
 	<section class="portfolio-section section-p">
 		<div class="conteiner">
             <div class="slider">
