@@ -71,6 +71,16 @@
     background-size: cover;
     background-position: center;
 }
+.conteiner .slider .slide.slide5{
+    background: url(../images/slides/app_desbravadores.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.conteiner .slider .slide.slide6{
+    background: url(../images/slides/moto_garage.jpg);
+    background-size: cover;
+    background-position: center;
+}
 
 @keyframes animate
 {

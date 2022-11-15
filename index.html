@@ -24,6 +24,7 @@
 		.info h5,.info h6{
 			padding-top: 2vh;
 		}
+
 		.areas_atuacoes{
 			display: flex;
 		    min-height: 100vh;
@@ -79,8 +80,111 @@
 			font-size: 5rem;
 			color: orange;
 		}
+/*portifolio like printrest*/
+		.areas_projetos{
+			display: flex;
+		    min-height: 100vh;
+		    background-color: #f0f0f1;
+		    flex-direction: column;
+		    justify-content: space-evenly;
+		}
+		.areas_projetos .titulos 
+		{
+			margin: 0 auto;
+			padding-bottom: 5vw;
+		}
+		.areas_projetos .titulos h1
+		{
+		    text-align: center;
+		    font-size: 35px;
+		    font-family: "Poppins",sans-serif;
+		    max-width: 41vw;
+		    padding-bottom: 10px;
+		    border-bottom: 4px solid orange;
+		}
+		
+		.areas_projetos .container_projetos{
+			width: 85%;
+			margin: 0 auto;
+			padding: 10px;
+			border: 1px solid #ccc;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 2em;
+			
+		}
+		.areas_projetos .container_projetos .card {
+			flex-basis: 34rem;
+			position: relative;
+			transition: .5s;
+		}
 
+		.areas_projetos .container_projetos .card .imgBox img{
+			width: 100%;
+			height: auto;
+			object-fit: contain;
+		}
+		.areas_projetos .container_projetos .card .links-card{
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 0;
+			background-color: rgba(0,0,0,0.5);
+			transition: .5s;
+			overflow: hidden;
+		}
 
+		.areas_projetos .container_projetos .card:hover .links-card{
+			height: 100%;
+
+		}		
+		.areas_projetos .container_projetos .card .links-card .acesso_btn_link{
+			position: absolute;
+			bottom: 10%;
+			left: 50%;
+			transform: translateX(-50%);
+			padding: 10px 20px;
+			color: #fff;
+			background-color: orange;
+			border: 0;
+			border-radius: 5px;
+			transition: .5s;
+		}
+		
+		.areas_projetos .container_projetos .card .links-card .acesso_btn_link:hover{
+			box-shadow: 1px 0px 45px 0px #fff;
+		}
+/*portifolio like printrest*/
+/* habilidade */
+	.habilidades-section_2{
+		display: grid;
+	}
+	.habilidades-section_2 .titulos{
+		text-align: center;
+	}	
+	.skill_conteiner{
+		display: flex;
+		gap: 10px;
+		padding: 10px 10px;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		padding-top: 4em;
+		padding-bottom: 4em;
+	}
+	
+	.skill_conteiner div{
+		background-color: rgb(233, 233, 233);
+		border: 1px solid rgb(194, 194, 194);
+		border-radius: 5px;
+		flex-basis: 20rem;
+		padding: 2em 3em;
+	}
+	.skill_conteiner div ul li{
+		display: block;
+		padding-bottom: 1em;
+	}
+/* habilidades */
 	</style>
 
 </head>
@@ -177,10 +281,68 @@
 			</div>
 		</div>
 	</section>
+	<section class="areas_projetos">
+		<div class="titulos">
+			<h1>Portifolio</h1>
+		</div>
+		<div class="container_projetos">
+			<div class="card">
+				<div class="imgBox">
+					<img src="./images/slides/projetos00.jpg" alt="">
+				</div>
+				<div class="links-card">
+					<a class="acesso_btn_link" href="https://fernandorodrigues29.github.io/homeDesingRetalho/"> Acesse Aqui</a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="imgBox">
+					<img src="./images/slides/projetos01.jpg" alt="">
+				</div>
+				<div class="links-card">
+					<a class="acesso_btn_link" href="https://fernandorodrigues29.github.io/siteBarbearia/"> Acesse Aqui</a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="imgBox">
+					<img src="./images/slides/projetos02.jpg" alt="">
+				</div>
+				<div class="links-card">
+					<a class="acesso_btn_link" href="https://fernandorodrigues29.github.io/inst_prest_serv/"> Acesse Aqui</a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="imgBox">
+					<img src="./images/slides/projetos03.jpg" alt="">
+				</div>
+				<div class="links-card">
+					<a class="acesso_btn_link" href="https://fernandorodrigues29.github.io/estoqueDbv/"> Acesse Aqui</a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="imgBox">
+					<img src="./images/slides/app_desbravadores.jpg" alt="">
+				</div>
+				<div class="links-card">
+					<a class="acesso_btn_link" href="https://fernandorodrigues29.github.io/GSC/"> Acesse Aqui</a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="imgBox">
+					<img src="./images/slides/moto_garage.jpg" alt="">
+				</div>
+				<div class="links-card">
+					<a class="acesso_btn_link" href="https://fernandorodrigues29.github.io/motorgarage/"> Acesse Aqui</a>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	<!--
 	<section class="portfolio-section section-p">
 		<div class="conteiner">
             <div class="slider">
-                <div class="slide slide1">
+
+				<div class="slide slide1">
                     <div class="caption">
                         <h2>Site Institucional</h2>
                         <p>
@@ -212,13 +374,64 @@
                         </p>
                     </div>
                 </div>
+				<div class="slide slide5">
+                    <div class="caption">
+                        <h2>Site Institucional</h2>
+                        <p>
+                            ideal para instituições e organizações <b><a href="https://fernandorodrigues29.github.io/homeDesingRetalho/"> Veja Mais</a></b>
+                        </p>
+                    </div>
+                </div>
+				<div class="slide slide6">
+                    <div class="caption">
+                        <h2>Site Institucional</h2>
+                        <p>
+                            ideal para instituições e organizações <b><a href="https://fernandorodrigues29.github.io/homeDesingRetalho/"> Veja Mais</a></b>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-		<!-- container -->
+		
 	</section><!-- portfolio-section -->
 	
-	<section class="habilidades-section section">
-		<div class="container-card">
+	<section class="habilidades-section_2 section">
+		<div class="titulos">
+			<h1>Habiliadades(hard-skills)</h1>
+		</div>
+			<div class="skill_conteiner">
+				<div class="front-end">
+					<ul>
+						<li><b>FRONT-END</b></li>
+						<li>html</li>
+						<li>css</li>
+						<li>js</li>
+						<li>vue</li>
+						<li>angular</li>
+						<li>react</li>
+					</ul>
+				</div>
+				<div class="back-end">
+					<ul>
+						<li><b>BACK-END</b></li>
+						<li>php</li>
+						<li>nodejs</li>
+						<li>mysql</li>
+						<li>codeigniter</li>
+						<li>phpunit</li>
+					</ul>
+				</div>
+				<div class="mobile">
+					<ul>
+						<li><b>MOBILE</b></li>
+						<li>PWA</li>
+						<li>Cordova</li>
+						<li>ionic</li>
+						
+					</ul>
+				</div>
+			</div>
+		<!-- <div class="container-card">
 			<div class="card">
 				<div class="imgBx">
 					<img src="./images/crads/i_php.jpg" alt="">
@@ -371,7 +584,7 @@
 				</div>
 			</div>
 	
-		</div>
+		</div> -->
 		
 	</section><!-- about-section -->
 
@@ -433,7 +646,7 @@
 						<div class="education margin-b-50">
 							<h4><b>Freelancer</b></h4>
 							<h5 class="font-yellow"><b>Desenvolvedor Web/Mobile Hibrido</b></h5>
-							<h6 class="font-lite-black margin-t-10">2019 - 2021</h6>
+							<h6 class="font-lite-black margin-t-10">2019 - 2022</h6>
 							<p class="margin-tb-30">
 								neste momento trabalhei, criando soluções web recursiva, tentando aplicar o 'mobile first', trabalhei com 
 								<b>Cordova</b>,<b>Ionic</b>,<b>Vue</b>, criação de <b>api</b>. 
@@ -443,7 +656,7 @@
 						<div class="education margin-b-50">
 							<h4><b>– Na Mira Certa - Agência Digita</b></h4>
 							<h5 class="font-yellow"><b>Desenvolvedor Web(pleno)/FREELANCER</b></h5>
-							<h6 class="font-lite-black margin-t-10">2014 ~ 2020</h6>
+							<h6 class="font-lite-black margin-t-10">2014 ~ 2022</h6>
 							<p class="margin-tb-30">
 								Desenvolvi um Sistema voltado para gestão uma rede de filiados Políticos(<b>CRM</b>>), aplicando a
 								metodologia de estatísticas, visava melhorar a filtragem dos alvos da campanha,
@@ -451,16 +664,6 @@
 								período também trabalhei melhorando a performance da base de dados existente, 
 								no decorrer dos anos 
 								trabalhei na modalidade de FREELANCER.
-							</p>
-						</div>
-						<div class="education margin-b-50">
-							<h4><b>FREELANCER</b></h4>
-							<h5 class="font-yellow"><b>Desenvolvedor Jr</b></h5>
-							<h6 class="font-lite-black margin-t-10">2013 ~ 2014</h6>
-							<p class="margin-tb-30">
-								desenvolvimento de sistemas em php, foram meus primeiros passos no desenvolvimento web,aprndir a usar 
-								sistemas de gerenciamento de equipe(<b>SCRUM</b>),e a cumprir prazos,trabalho em equipe, como alguns frameworks
-								 (<b>ZEND</b>,<b>Bootstrap</b>). 
 							</p>
 						</div>
 					</div>
@@ -490,12 +693,13 @@
 							<p class="margin-tb-30">Profissionais altamente capacitados para a área da Tecnologia da Informação, com foco no desenvolvimento de sistemas para a Internet. Esse é o perfil do tecnólogo em Sistemas para Internet formado na Unicesumar. </p>
 						</div><!-- education -->
 						
-						<div class="education margin-b-50">
+						<!-- <div class="education margin-b-50">
 							<h4><b>TÉCNICO EM INFORMATICA</b></h4>
 							<h5 class="font-yellow"><b>SENAC-DF</b></h5>
 							<h6 class="font-lite-black margin-t-10">MARÇO 2012(1360H)</h6>
 							<p class="margin-tb-30">O Técnico em informática atende ás necessidades identificadas no mercado de trabalho, atuando em projetos na concepção no desenvolvimento  na manutenção de sistemas de informação, aplicando metodologias e ferramentas, livres  proprietárias. Exerce o assessoramento a setores e pessoas, coordenando equipes, executando deliberações e gerindo o fluxo de informação da empresa, podendo planejar, organizar, coordernar e controlar atividades.  </p>
-						</div><!-- education -->
+						</div> -->
+						<!-- education -->
 					</div><!-- education-wrapper -->
 				</div><!-- col-sm-9 -->
 			</div><!-- row -->
