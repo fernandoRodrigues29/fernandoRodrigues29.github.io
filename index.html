@@ -110,6 +110,7 @@
 			border: 1px solid #ccc;
 			display: flex;
 			flex-wrap: wrap;
+			justify-content: center;
 			gap: 2em;
 			
 		}
@@ -161,7 +162,15 @@
 		display: grid;
 	}
 	.habilidades-section_2 .titulos{
+		position: relative;
 		text-align: center;
+		font-size: 8px;
+		font-family: "Poppins",sans-serif;
+		max-width: 41vw;
+		padding-bottom: 10px;
+		border-bottom: 4px solid orange;
+		left: 50%;
+		transform: translateX(-50%);
 	}	
 	.skill_conteiner{
 		display: flex;
@@ -397,36 +406,36 @@
 	
 	<section class="habilidades-section_2 section">
 		<div class="titulos">
-			<h1>Habiliadades(hard-skills)</h1>
+			<h1>Habiliadades</h1>
 		</div>
 			<div class="skill_conteiner">
 				<div class="front-end">
 					<ul>
 						<li><b>FRONT-END</b></li>
-						<li>html</li>
-						<li>css</li>
-						<li>js</li>
-						<li>vue</li>
-						<li>angular</li>
-						<li>react</li>
+						<li> <i class="fa-brands fa-html5"></i> html</li>
+						<li> <i class="fa-brands fa-css3-alt"></i> css</li>
+						<li><i class="fa-brands fa-square-js"></i> js</li>
+						<li><i class="fa-brands fa-vuejs"></i> vue</li>
+						<!-- <li>angular</li>
+						<li>react</li> -->
 					</ul>
 				</div>
 				<div class="back-end">
 					<ul>
 						<li><b>BACK-END</b></li>
-						<li>php</li>
-						<li>nodejs</li>
-						<li>mysql</li>
-						<li>codeigniter</li>
-						<li>phpunit</li>
+						<li><i class="fa-brands fa-php"></i> php</li>
+						<li><i class="fa-brands fa-node-js"></i> nodejs</li>
+						<li><i class="fa-solid fa-database"></i> mysql</li>
+						<li><i class="fa-solid fa-code"></i> codeigniter</li>
+						<li><i class="fa-solid fa-vials"></i> phpunit</li>
 					</ul>
 				</div>
 				<div class="mobile">
 					<ul>
 						<li><b>MOBILE</b></li>
-						<li>PWA</li>
-						<li>Cordova</li>
-						<li>ionic</li>
+						<li><i class="fa-solid fa-compass"></i> PWA</li>
+						<li><i class="fa-solid fa-compass-drafting"></i> Cordova</li>
+						<li><i class="fa-solid fa-compass-drafting"></i> ionic</li>
 						
 					</ul>
 				</div>
